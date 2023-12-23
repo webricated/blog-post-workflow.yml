@@ -1,3 +1,23 @@
+name: Latest blog post workflow
+on: 
+    schedule:
+        - cron: '0 * * * *'
+jobs: 
+    update-readme-with-blog: 
+        name: Update this repo's README with latest blog posts
+        runs-on: ubuntu-latest
+        steps: 
+            - uses: actions/checkout@v2
+            - uses: gautamkrishnar/blog-post-workflow@master
+              with: 
+                max_post_count: "4"
+                feed_list: "https://dev.to/feed/webricated ,https://dev.to/webricated, https://medium.com/feed/@webricate, https://rss.com/podcasts/webricated/"
+
+                
+
+
+
+
 <h3 align="center">A passionate frontend developer from India</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=webricated&label=Profile%20views&color=0e75b6&style=flat" alt="webricated" /> </p>
