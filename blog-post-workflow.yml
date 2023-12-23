@@ -11,4 +11,4 @@ jobs:
             - uses: gautamkrishnar/blog-post-workflow@master
               with: 
                 max_post_count: "4"
-                feed_list: "https://dev.to/feed/https://dev.to/webricated, https://medium.com/feed/@webricate, https://rss.com/podcasts/webricated/"
+                feed_list: "https://dev.to/feed/webricated ,https://dev.to/webricated, https://medium.com/feed/@webricate, https://rss.com/podcasts/webricated/"
